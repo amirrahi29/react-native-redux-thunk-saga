@@ -31,7 +31,7 @@ const AllPosts = () => {
           <tbody>
 
             { 
-            posts.length==""?
+            posts.length===""?
             <h3>Please wait............</h3>:
             
             posts.map(( item, index ) => {
