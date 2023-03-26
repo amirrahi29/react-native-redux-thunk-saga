@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import Header from '../components/Header';
+import { useDispatch,useSelector } from 'react-redux';
+import { loadPosts } from '../redux/action';
 
 const AddPost = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(()=>{
+   
+  },[]);
+
   const handleToast = () => {
     toast("Wow so easy!");
   }
+
+
+
   return (
     <>
       <Header />
